@@ -21,7 +21,7 @@
     */
 
   body {
-      display: flex;
+      display: grid;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -73,7 +73,60 @@
     .blackBox {
       background-color: #232629;
     }
-  
+    
+    .unaLayer2 {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 350px 200px 150px 50px;
+      grid-template-rows: 500px 130px 155px 22px;
+      gap: 9px;
+    }
+    .item2 {
+      background-color: #F0F1EC;
+    }
+
+    .redBox2 {
+      background-color: green;
+    }
+
+    .WhiteBox12 {
+      grid-column: span 3;
+    }
+
+    .WhiteBox22 {
+      grid-row: span 3;
+    }
+
+    .WhiteBox32 {
+      grid-area: 2 / 2 / 4 / 4
+    }
+
+    .blueBox2 {
+      background-color: red;
+      border-bottom: 10px solid #000;
+    }
+
+    .WhiteBox42 {
+      grid-row: span 2;
+    }
+
+    .yellowBox2 {
+      background-color: #F9D01E;
+    }
+
+    .blackBox2 {
+      background-color: #232629;
+    }
+    .PietMondrian {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: green;
+      font-size: xx-large;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -83,15 +136,27 @@
     <div class="item WhiteBox1"></div>
     <div class="item WhiteBox2"></div>
     <div class="item WhiteBox3"></div>
-
     <div class="item blueBox"></div>
     <div class="item WhiteBox4"></div>
-    
     <div class="item"></div>
     <div class="item yellowBox"></div>
     <div class="item blackBox"></div>
-    
   </div>
+  <hr />
+<div><span class="PietMondrian">Piet Mondrian</span>   Challenge 2  </div>
+  <hr />
+  <div class="unaLayer2">
+    <div class="item2 redBox2"></div> 
+    <div class="item2 WhiteBox12"></div>
+    <div class="item2 WhiteBox22"></div>
+    <div class="item2 WhiteBox32"></div>
+    <div class="item2 blueBox2"></div>
+    <div class="item2 WhiteBox42"></div>
+    <div class="item2"></div>
+    <div class="item2 yellowBox2"></div>
+    <div class="item2 blackBox2"></div>
+  </div>
+
 </body>
 
 </html>
